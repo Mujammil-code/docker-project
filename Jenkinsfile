@@ -3,7 +3,11 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'
+<<<<<<< HEAD
         IMAGE_NAME = 'thannirudocker/flask-ecommerce'
+=======
+        IMAGE_NAME = 'mujammil12/flask-ecommerce'
+>>>>>>> 083beeb (first commit)
         KUBECONFIG = '/var/lib/jenkins/.kube/config'
     }
 
@@ -11,7 +15,11 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "✅ Checking out source code from GitHub (main branch)..."
+<<<<<<< HEAD
                 git branch: 'main', url: 'https://github.com/anildevops7702/docker-project.git'
+=======
+                git branch: 'main', url: 'https://github.com/Mujammil-code/docker-project.git'
+>>>>>>> 083beeb (first commit)
                 sh 'ls -l'
             }
         }
